@@ -1,0 +1,114 @@
+@import './dependencies.scss';
+
+html,
+body {
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: $c_white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  font-size: 100%;
+  outline: 0;
+  font-family: inherit;
+}
+
+.main__layout {
+  padding-top: $header_height;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+
+  main {
+    flex-grow: 1;
+  }
+}
+
+// Containers
+.container {
+  &__big {
+    width:100%;
+    max-width: 1280px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+  }
+
+  &__medium {
+    width:100%;
+    max-width: 860px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+  }
+}
+
+// Buttons
+.button {
+  cursor: pointer;
+  padding: 10px 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &__primary {
+    color: $c_white;
+    background: linear-gradient(310deg, $c_primary_dark 0%, $c_primary 100%);
+  }
+
+  &__white {
+    color: $c_secondary_dark;
+    background-color: $c_white;
+  }
+
+  &__grey {
+    color: $c_black;
+    background-color: $c_grey25;
+  }
+}
+
+// Forms
+
+.form {
+
+  &__input {
+    background-color: $c_grey10;
+    padding: 5px 15px;
+    margin-bottom: 16px;
+    height: 40px;
+    width: 100%;
+    font-size: 90%;
+    border: 1px solid $c_grey25;
+    border-radius: 5px;
+  }
+
+  &__textarea {
+    background-color: $c_grey10;
+    padding: 5px 15px;
+    margin-bottom: 16px;
+    min-height: 80px;
+    width: 100%;
+    resize: vertical;
+    font-size: 90%;
+    border: 1px solid $c_grey25;
+    border-radius: 5px;
+  }
+}

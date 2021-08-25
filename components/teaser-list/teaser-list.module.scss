@@ -1,0 +1,26 @@
+@import '../../styles/dependencies.scss';
+
+.wrapper {
+    background-color: $c_grey25;
+}
+
+.container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.headline {
+    font-size: 120%;
+    text-align: center;
+    margin-bottom: 24px;
+
+    @include breakpoint('large') {
+        font-size: 180%;
+    }
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}

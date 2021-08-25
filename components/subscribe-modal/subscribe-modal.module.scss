@@ -1,0 +1,90 @@
+@import '../../styles/dependencies.scss';
+
+$header_height: 20px;
+$box_padding: 16px;
+
+.wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:90%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    padding: $box_padding;
+    z-index: 2;
+}
+
+.header {
+    text-align: right;
+    margin-bottom: $box_padding;
+    height: $header_height;
+    
+    button {
+        cursor: pointer;
+        font-weight: bold;
+    }
+}
+
+.body {
+    width: 100%;
+    max-height: calc(90vh - #{$header_height} - (#{$box_padding} * 3));
+    overflow-y: auto ;
+}
+
+.form {
+
+    &__container {
+        h3 {
+            font-size: 110%;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__elements {
+        display: flex;
+        margin-bottom: 8px;
+
+        input {
+            flex: 1;
+            background-color: $c_grey10;
+            padding: 2px 10px;
+            font-size: 90%;
+        }
+
+        button {
+            border-radius: 0;
+        }
+    }
+
+    &__errorMsg {
+        color: $c_error;
+        height: 16px;
+        line-height: 16px;
+        font-size: 90%;
+    }
+}

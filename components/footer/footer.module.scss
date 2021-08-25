@@ -1,0 +1,26 @@
+@import '../../styles/dependencies.scss';
+
+.wrapper {
+    background-color: $c_grey50;
+    color: $c_white;
+}
+
+.container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    background-color: $c_white;
+    mask: url('../../public/spaceship.svg') no-repeat center;
+    margin-right: 10px;
+}
