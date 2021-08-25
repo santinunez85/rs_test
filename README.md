@@ -13,4 +13,8 @@ Run the development server:
 npm run dev
 ```
 
-Open the site in [http://localhost:3000/]
+Open the site in your browser:
+
+```bash
+http://localhost:3000/
+```
