@@ -3,7 +3,9 @@ import ContactForm from '../components/contact-form/contact-form';
 
 const Contact: NextPage = () => {
   return (
-    <ContactForm/>
+    <main>
+      <ContactForm/>
+    </main>
   )
 }
 

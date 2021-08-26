@@ -5,10 +5,10 @@ import TeaserList from '../components/teaser-list/teaser-list';
 
 const Home: NextPage = () => {
   return (
-    <>
+    <main>
       <Jumbotron/>
       <TeaserList/>
-    </>
+    </main>
   )
 }
 
