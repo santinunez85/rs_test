@@ -2,7 +2,7 @@ import styles from './contact-form.module.scss';
 
 const ContactForm = () => {
   return (
-    <div className={styles.wrapper}>
+    <section className={styles.wrapper}>
       <div className="container__medium">
         <h2 className={styles.headline}>Contact Us</h2>
         <form className="form">
@@ -12,7 +12,7 @@ const ContactForm = () => {
           <button type="button" className="button button__primary">Submit</button>
         </form>
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -24,14 +24,14 @@ const dummy_data = [
 
 const TeaserList = () => {
   return (
-    <div className={styles.wrapper}>
+    <section className={styles.wrapper}>
         <div className={styles.container + " container__big"}>
             <h3 className={styles.headline}>Our Lastest News</h3>
             <div className={styles.list}>
               {dummy_data.map(item => <TeaserItem key={item.id} image={item.image} title={item.title} text={item.text} />)}
             </div>
         </div>
-    </div>
+    </section>
   )
 }
 

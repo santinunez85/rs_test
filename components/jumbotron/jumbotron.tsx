@@ -17,12 +17,10 @@ const Jumbotron = () => {
 
   return (
     <>
-    <div className={styles.wrapper}>
-
+    <section className={styles.wrapper}>
         <div className={styles.night}>
           {stars.map((_, idx) => <span className={styles.shooting_star} key={idx}></span>)}
         </div>
-
         <div className={styles.container + ' container__big'}>
           <div>
             <h2 className={styles.headline}>Equal opportunity for space flight, with a spaceship</h2>
@@ -32,8 +30,7 @@ const Jumbotron = () => {
             </div>
           </div>
         </div>
-
-    </div>
+    </section>
     {modalOpen && <SubscribeModal closeModal={closeModal}></SubscribeModal>}
     </>
   )

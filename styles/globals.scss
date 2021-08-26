@@ -75,11 +75,6 @@ a {
     background: linear-gradient(310deg, $c_primary_dark 0%, $c_primary 100%);
   }
 
-  &__white {
-    color: $c_secondary_dark;
-    background-color: $c_white;
-  }
-
   &__grey {
     color: $c_black;
     background-color: $c_grey25;
