@@ -1,7 +1,11 @@
 import { useState, useEffect } from 'react';
 import styles from './subscribe-modal.module.scss';
 
-const SubscribeModal = (props:any) => {
+type SubscribeModalProps = {
+  closeModal: () => void; 
+}
+
+const SubscribeModal = (props:SubscribeModalProps) => {
   const [isvalidEmail, setValidEmail] = useState(true);
   const [errorEmail, setErrorEmail] = useState(false);
   const [email, setEmailValue] = useState('');
@@ -12,7 +16,7 @@ const SubscribeModal = (props:any) => {
     setValidEmail(isValidEmail);
   }
 
-  const handleChange = (e:any) => {
+  const handleChange = (e:React.ChangeEvent<HTMLInputElement>) => {
     setEmailValue(e.target.value);
     setErrorEmail(false);
   }

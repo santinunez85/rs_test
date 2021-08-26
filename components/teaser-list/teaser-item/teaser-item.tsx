@@ -1,6 +1,12 @@
 import styles from './teaser-item.module.scss';
 
-const TeaserItem = (props: any) => {
+type TeaserItemProps = {
+  image: string,
+  title:string,
+  text:string,
+};
+
+const TeaserItem = (props: TeaserItemProps) => {
   return (
     <div className={styles.box}>
       <div className={styles.tile}>
